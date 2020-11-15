@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+.common_bg{
+	background-color: #f6f9f9;
+}
+nav.navbar.navbar-expand-lg {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.navbar-nav .nav-link {
+    color: #2d3950;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+.navbar-toggler {
+    border: 1.5px solid #15a4fa;
+}
+.navbar-toggler:hover{
+     border: transparent
+
+}
+.navbar-toggler span {
+    width: 40px;
+    height: 4px;
+    display: block;
+    background: #15a4fa;
+    margin: 5px 0;
+}
+.banner_seaction{
+	background-image: url('img/banner.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	align-items: center;
+    position: relative
+}
+.html {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    width: 34px;
+
+    animation-name: html;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 50s; 
+    animation-timing-function: linear;
+ 
+}
+
+@keyframes html{
+    0%  {
+            top: 50%;
+    left: 50%;
+    }  
+
+    10%{ 
+       top: 60%;
+    left: 25%;
+    transform: rotate(120deg)
+}
+    30%{
+
+       top: 30%;
+    left: 37%;
+    transform: rotate(-190deg)
+    }
+    40%{
+
+       top: 25%;
+    left: 55%;
+    transform: rotate(200deg)
+    }
+    50%{
+       top: 50%;
+    left: 65%;
+    transform: rotate(200deg)}
+    70%{
+
+       top: 30%;
+    left: 90%;
+    transform: rotate(200deg)
+    }
+    90%{
+
+      top: 15%;
+    left: 70%;
+    transform: rotate(-300deg)
+
+    }
+    100%{
+ top: 0;
+    left: 0;
+    transform: rotate(120deg)
+
+    }
+}
+
+
+
+
+.banner_seaction .row{
+	min-height: 800px;
+	align-items: center
+}
+.banner_seaction h1 {
+    color: #fff;
+    font-size: 120px;
+    font-weight: 500;
+}
+.banner_seaction p{
+    color: #fff;
+    font-size: 20px;
+        margin: 10px 0 34px 0;
+}
+.banner_seaction span{
+    width: 100%;
+    background-color: #15a4fa;
+    height: 2px;
+    display: block;
+}
+.banner_seaction button {
+    font-size: 18px;
+    padding: 11px 36px;
+    color: #fff;
+    border: 1.6px solid #15ADFF;
+}
+.banner_seaction button:hover{
+	background-color:#15ADFF;
+	color: #fff
+}
+.banner_seaction a{
+	color: #fff;
+	display: inline-block;
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate
+    }
+    @keyframes move{
+    	0%{    
+    		transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    	}
+    	100%{
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    	}
+    }
+
+
+
+    .about_seaction{
+    	padding: 75px 0 110px;
+    	text-align: center;}
+    h1{
+    	font-size: 40px;
+    	color: #333366;
+    	font-weight: 500;}
+    p{
+    	font-size: 20px;
+    	color: #999;
+    	font-weight: 400;
+    	margin-top: 25px
+    }
+
+
+
+
+.service_seaction{
+	padding: 65px 0;
+	text-align: center;
+}
+.service span{
+font-size: 70px;
+color: #fff;
+width: 100px;
+height: 100px;
+display: block;
+margin: auto;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 50%, #5fc3ff 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 50%,#5fc3ff 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 50%,#5fc3ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1; )/* IE6-9 */
+
+}
+.service i{}
+.service h2{
+	font-size: 22px;
+	color: #333366;
+	font-weight: 500;
+	margin:25px 0 15px;
+}
+.service p{
+	font-size: 15px;
+	color: #999999;
+	width: 315px;
+	margin: auto;margin-bottom: 30px
+}
+
+
+
+.showcase_seaction{
+	text-align: center;
+	padding: 80px 0 100px;
+}
+.showcase {
+	position: relative;
+		margin-top: 30px
+}
+.showcase ul {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% ,-50%);
+}
+.showcase ul li{
+	padding: 8px;
+
+	
+}
+.showcase ul li a {
+	color: #fff;
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+    opacity: 0
+}
+.showcase:hover ul li a{
+    opacity: 1;
+    transition-delay: .3s
+}
+.showcase::before{
+	content: "";
+	position: absolute;
+	height: 0;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background:#15a4fae3;
+	transition-delay: .4s;
+	transition: .8s;
+}
+.showcase:hover::before{	
+	height: 100%;
+	
+}
+
+
+
+.contact_sraction{
+    background-image:url(img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 75px 0 120px;
+
+}
+.contact_sraction::before{
+    content: "";
+    position: absolute;
+    background-color: #2d3950;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    top: 0;
+    left: 0
+
+}
+.contact_sraction h1{
+    color: #fff
+}
+.contact_sraction p{
+    color: #999
+}
+.form-control { 
+    padding: 30px;
+    color: #999;
+    background-color: #fff0;
+    border: 1px solid #999a;
+}
+label{
+    color: #999;
+    margin-left: 20px
+}
+form .btn{
+        font-size: 18px;
+    padding: 11px 36px;
+    color: #fff;
+    border: 1.6px solid #15ADFF;
+}
+form .btn:hover{
+    background-color: #15ADFF;
+    color: #fff}
+
+
+
+
+    footer{
+        padding: 27px 0;
+    }
+    footer ul{}
+    footer ul li{
+        padding-left: 5px
+    }
+   footer ul li a {
+    color: #fff;
+    background-color: #15a4fa;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    border: 1px solid #15a4fa;
+    transition-delay: .1s
+}
+    footer ul li a:hover{
+        background-color: transparent
+    }
